@@ -1,7 +1,6 @@
 package com.example.task.Model;
 
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,7 +15,7 @@ public class ProfileViewHolder extends RecyclerView.ViewHolder {
 
     public ProfileViewHolder(@NonNull View itemView) {
         super(itemView);
-//        imageView = itemView.findViewById(R.id.imageProfile);
+
         name =(TextView) itemView.findViewById(R.id.nameText);
         date = (TextView) itemView.findViewById(R.id.daysOffText);
     }
