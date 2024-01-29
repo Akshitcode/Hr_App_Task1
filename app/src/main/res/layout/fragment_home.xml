@@ -171,21 +171,12 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <HorizontalScrollView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/offThisWeekRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scrollbars="none">
+                android:padding="5dp" />
 
-                <LinearLayout
-                    android:id="@+id/horizontalProfileView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-
-                </LinearLayout>
-
-            </HorizontalScrollView>
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
@@ -196,21 +187,11 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <HorizontalScrollView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wishThemRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scrollbars="none">
-
-                <LinearLayout
-                    android:id="@+id/horizontalWishView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-
-                </LinearLayout>
-
-            </HorizontalScrollView>
+                android:padding="5dp" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -295,20 +276,11 @@
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
-            <HorizontalScrollView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/holidayRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scrollbars="none">
-
-                <LinearLayout
-                    android:id="@+id/horizontalHolidayView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    
-                </LinearLayout>
-
-            </HorizontalScrollView>
+                android:padding="5dp" />
 
 
         </LinearLayout>
