@@ -1,16 +1,14 @@
 package com.example.task;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.SearchView;
 import android.widget.Toast;
 
-import com.example.task.databinding.ActivityMainBinding;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.task.databinding.ActivitySearchBinding;
 
 public class SearchActivity extends AppCompatActivity {
