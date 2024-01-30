@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.task.Adapter.ProfileViewAdapter;
-import com.example.task.ViewClass;
+import com.example.task.DataModel.ViewClass;
 import com.example.task.R;
 
 import java.util.ArrayList;

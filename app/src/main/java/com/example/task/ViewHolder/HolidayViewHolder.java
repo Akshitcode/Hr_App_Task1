@@ -1,4 +1,4 @@
-package com.example.task.Model;
+package com.example.task.ViewHolder;
 
 import android.view.View;
 import android.widget.TextView;

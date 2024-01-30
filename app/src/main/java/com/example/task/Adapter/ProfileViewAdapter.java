@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.task.Model.ProfileViewHolder;
-import com.example.task.ViewClass;
+import com.example.task.ViewHolder.ProfileViewHolder;
+import com.example.task.DataModel.ViewClass;
 
 import java.util.ArrayList;
 

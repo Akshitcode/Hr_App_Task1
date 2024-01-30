@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.task.Model.HolidayViewHolder;
+import com.example.task.ViewHolder.HolidayViewHolder;
 import com.example.task.R;
-import com.example.task.ViewClass;
+import com.example.task.DataModel.ViewClass;
 
 import java.util.ArrayList;
 

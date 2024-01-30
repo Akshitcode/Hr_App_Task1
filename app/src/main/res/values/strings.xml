@@ -15,4 +15,18 @@
     <string name="date">Date</string>
     <string name="employee_directory">Employee Directory</string>
     <string name="search_icon">Search Icon</string>
+    <string name="apply_nleave">Apply\nLeave</string>
+    <string name="raise_nticket">Raise\nTicket</string>
+    <string name="raise_nexpense">Raise\nExpense</string>
+    <string name="leave_nbalance">Leave\nBalance</string>
+    <string name="shift_today_general_9_00_am_06_00pm">SHIFT TODAY : GENERAL(9:00 AM - 06:00PM)</string>
+    <string name="_26_jan_friday_n0h_8h">26 Jan Friday \n0h/8h</string>
+    <string name="neha_deshpande_made_an_nannouncement_n23_jan">Neha Deshpande made an \nannouncement\n23 jan</string>
+    <string name="get_ready_for_keka_josh_cultural_nactivities_ahead">Get Ready for KEKA JOSH - Cultural\nActivities Ahead!</string>
+    <string name="dear_keka_superstars_n_nfantastic_news_awaits_you_dsfkajvnsczxlkvjdsclkxzvjdsklcxzjvnczvxkblkdsjcvblkdcjzxvcxzvkljbsdklczxvjbdkzcxjvcgkvxznflzdjkxcvnxczn_vj_gkvjbefsdljvkndm_sfxc">Dear Keka Superstars,\n\nFantastic news awaits you! dsfkajvnsczxlkvjdsclkxzvjdsklcxzjvnczvxkblkdsjcvblkdcjzxvcxzvkljbsdklczxvjbdkzcxjvcgkvxznflzdjkxcvnxczn,vj gkvjbefsdljvkndm,sfxc</string>
+    <string name="see_all_announcements">See all announcements</string>
+    <string name="off_this_week">Off this week</string>
+    <string name="upcoming_holidays">Upcoming Holidays</string>
+    <string name="wish_them">Wish them</string>
+    <string name="announcements">Announcements</string>
 </resources>
