@@ -10,8 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.task.Adapter.HolidayViewAdapter;
-import com.example.task.Adapter.ProfileViewAdapter;
+import com.example.task.Adapter.ViewsAdapter;
 import com.example.task.DataModel.ViewClass;
 import com.example.task.R;
 
@@ -37,53 +36,33 @@ public class HomeFragment extends Fragment {
 
         RecyclerView weekRecyclerView = view.findViewById(R.id.offThisWeekRecyclerView);
         weekRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL, false));
-        ProfileViewAdapter adapter =new ProfileViewAdapter(requireContext(), weekOffList());
+        ViewsAdapter adapter =new ViewsAdapter(requireContext(), createList(names, weekOff),"Profile");
         weekRecyclerView.setAdapter(adapter);
 
         RecyclerView wishRecyclerView = view.findViewById(R.id.wishThemRecyclerView);
         wishRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL, false));
-        ProfileViewAdapter adapter1 =new ProfileViewAdapter(requireContext(), wishThemList());
+        ViewsAdapter adapter1 =new ViewsAdapter(requireContext(), createList(names,birth),"Profile");
         wishRecyclerView.setAdapter(adapter1);
 
 
         RecyclerView holidayRecyclerView = view.findViewById(R.id.holidayRecyclerView);
         holidayRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL, false));
-        HolidayViewAdapter adapter2 =new HolidayViewAdapter(requireContext(), holidayList());
+        ViewsAdapter adapter2 =new ViewsAdapter(requireContext(), createList(holidays,dates),"Holidays");
         holidayRecyclerView.setAdapter(adapter2);
 
         return view;
     }
 
-    private ArrayList<ViewClass> holidayList() {
+    private ArrayList<ViewClass> createList(String[] first, String[] second) {
         ArrayList<ViewClass> list = new ArrayList<>();
 
-        for (int i = 0; i < holidays.length; i++) {
-            ViewClass viewClass = new ViewClass(holidays[i], dates[i]);
+        for (int i = 0; i < first.length; i++) {
+            ViewClass viewClass = new ViewClass(first[i], second[i]);
             list.add(viewClass);
         }
 
         return list;
     }
 
-    private ArrayList<ViewClass> weekOffList() {
 
-        ArrayList<ViewClass> list = new ArrayList<>();
-
-        for (int i = 0; i < names.length; i++) {
-            ViewClass profileClass = new ViewClass(names[i],weekOff[i]);
-            list.add(profileClass);
-        }
-
-        return list;
-    }
-    private ArrayList<ViewClass> wishThemList() {
-
-        ArrayList<ViewClass> list = new ArrayList<>();
-
-        for (int i = 0; i < names.length; i++) {
-            ViewClass profileClass = new ViewClass(names[i],birth[i]);
-            list.add(profileClass);
-        }
-        return list;
-    }
 }

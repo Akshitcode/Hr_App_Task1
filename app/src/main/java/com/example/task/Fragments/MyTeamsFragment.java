@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.task.Adapter.ProfileViewAdapter;
+import com.example.task.Adapter.ViewsAdapter;
 import com.example.task.DataModel.ViewClass;
 import com.example.task.R;
 
@@ -18,6 +18,9 @@ import java.util.ArrayList;
 
 
 public class MyTeamsFragment extends Fragment {
+    String names[] = {"Akshit", "Aman", "Abhishek", "Vamsi", "Rooha", "Vinayak", "Harshit", "Anshul"};
+    String weekOff[] = {"24-31 Jan", "Today-30Jan", "01 Feb", "02-05 Feb", "Yestarday", "14 Jan", "30 Dec", "28 Dec"};
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -26,24 +29,19 @@ public class MyTeamsFragment extends Fragment {
 
         RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL, false));
-
-
-        ProfileViewAdapter adapter =new ProfileViewAdapter(requireContext(), weekOffList());
+        ViewsAdapter adapter =new ViewsAdapter(requireContext(), createList(names,weekOff), "Profile");
         recyclerView.setAdapter(adapter);
 
         return view;
     }
-    private ArrayList<ViewClass> weekOffList() {
-        String names[] = {"Akshit", "Aman", "Abhishek", "Vamsi", "Rooha", "Vinayak", "Harshit", "Anshul"};
-        String weekOff[] = {"24-31 Jan", "Today-30Jan", "01 Feb", "02-05 Feb", "Yestarday", "14 Jan", "30 Dec", "28 Dec"};
 
+    private ArrayList<ViewClass> createList(String[] first, String[] second) {
         ArrayList<ViewClass> list = new ArrayList<>();
 
-        for (int i = 0; i < names.length; i++) {
-            ViewClass profileClass = new ViewClass(names[i],weekOff[i]);
-            list.add(profileClass);
+        for (int i = 0; i < first.length; i++) {
+            ViewClass viewClass = new ViewClass(first[i], second[i]);
+            list.add(viewClass);
         }
-
 
         return list;
     }

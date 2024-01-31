@@ -3,14 +3,18 @@ package com.example.task.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
+import com.example.task.Adapter.ViewsAdapter;
+import com.example.task.DataModel.ViewClass;
 import com.example.task.R;
+
+import java.util.ArrayList;
 
 
 public class MeFragment extends Fragment {
@@ -26,17 +30,22 @@ public class MeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_me, container, false);
 
 
-        LinearLayout linearLayout = view.findViewById(R.id.horizontalLinearLayout);
-        for (int i = 0; i < holidays.length; i++) {
-            View listItem = LayoutInflater.from(requireContext()).inflate(R.layout.activity_holdiay, linearLayout, false);
-            TextView holiday = listItem.findViewById(R.id.holidayText);
-            TextView date = listItem.findViewById(R.id.dateText);
-            holiday.setText(holidays[i]);
-            date.setText(dates[i]);
-
-            // Add the listItem to the horizontalLinearLayout
-            linearLayout.addView(listItem);
-        }
+        RecyclerView holidayRecyclerView = view.findViewById(R.id.meHolidayRecyclerView);
+        holidayRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL, false));
+        ViewsAdapter adapter2 =new ViewsAdapter(requireContext(), holidayList(),"Holidays");
+        holidayRecyclerView.setAdapter(adapter2);
         return view;
+    }
+
+
+    private ArrayList<ViewClass> holidayList() {
+        ArrayList<ViewClass> list = new ArrayList<>();
+
+        for (int i = 0; i < holidays.length; i++) {
+            ViewClass viewClass = new ViewClass(holidays[i], dates[i]);
+            list.add(viewClass);
+        }
+
+        return list;
     }
 }

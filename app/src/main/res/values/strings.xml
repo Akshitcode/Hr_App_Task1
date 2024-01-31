@@ -29,4 +29,8 @@
     <string name="upcoming_holidays">Upcoming Holidays</string>
     <string name="wish_them">Wish them</string>
     <string name="announcements">Announcements</string>
+    <string name="there_ar_no_pending_items_in_your_inbox_to_approve_or_reject">There ar no pending items in your inbox to approve or reject</string>
+    <string name="no_inbox_item">No Inbox Item</string>
+    <string name="archive">Archive</string>
+    <string name="view_all_requests_history_from_here">View all Requests History from here</string>
 </resources>
