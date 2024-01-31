@@ -31,16 +31,14 @@ public class ViewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         switch (type) {
             case "Profile":
-                LayoutInflater inflater = LayoutInflater.from(parent.getContext());
                 View view1 = inflater.inflate(R.layout.profile_view, parent, false);
                 return new ProfileViewHolder(view1);
 
             case "Holidays":
-                LayoutInflater inflater1 = LayoutInflater.from(parent.getContext());
-                View view2 = inflater1.inflate(R.layout.activity_holdiay, parent, false);
+                View view2 = inflater.inflate(R.layout.activity_holdiay, parent, false);
                 return new HolidayViewHolder(view2);
 
 

@@ -1,7 +1,6 @@
 package com.example.task;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.SearchView;
 import android.widget.Toast;
 
@@ -20,8 +19,6 @@ public class SearchActivity extends AppCompatActivity {
         binding = ActivitySearchBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setTitle("Hello");
-
         binding.searchView.setIconifiedByDefault(false);
         binding.searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -38,13 +35,7 @@ public class SearchActivity extends AppCompatActivity {
         });
 
 
-        binding.iconBackImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-
-            }
-        });
+        binding.iconBackImage.setOnClickListener(view -> finish());
 
     }
 

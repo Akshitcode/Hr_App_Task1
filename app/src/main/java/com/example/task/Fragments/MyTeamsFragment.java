@@ -18,8 +18,8 @@ import java.util.ArrayList;
 
 
 public class MyTeamsFragment extends Fragment {
-    String names[] = {"Akshit", "Aman", "Abhishek", "Vamsi", "Rooha", "Vinayak", "Harshit", "Anshul"};
-    String weekOff[] = {"24-31 Jan", "Today-30Jan", "01 Feb", "02-05 Feb", "Yestarday", "14 Jan", "30 Dec", "28 Dec"};
+    String[] names = {"Akshit", "Aman", "Abhishek", "Vamsi", "Rooha", "Vinayak", "Harshit", "Anshul"};
+    String[] weekOff = {"24-31 Jan", "Today-30Jan", "01 Feb", "02-05 Feb", "Yestarday", "14 Jan", "30 Dec", "28 Dec"};
 
 
     @Override

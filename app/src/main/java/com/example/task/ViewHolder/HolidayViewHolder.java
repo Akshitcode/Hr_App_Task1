@@ -10,7 +10,8 @@ import com.example.task.R;
 
 public class HolidayViewHolder extends RecyclerView.ViewHolder {
 
-    private TextView holidayText, dateText;
+    private final TextView holidayText;
+    private final TextView dateText;
     public HolidayViewHolder(@NonNull View itemView) {
         super(itemView);
 

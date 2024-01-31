@@ -19,9 +19,9 @@ import java.util.ArrayList;
 
 public class MeFragment extends Fragment {
 
-    String holidays [] = {"Maha Shivaratri", "Holi", "Good Friday", "Ugadi", "Eid AI Fitr", "Ram Navami","Bakrid/Eid al Adha",
+    String[] holidays = {"Maha Shivaratri", "Holi", "Good Friday", "Ugadi", "Eid AI Fitr", "Ram Navami","Bakrid/Eid al Adha",
             "Independence Day", "Rakshabandhan", "Krishna Jayanti/Janmashtmi"};
-    String dates[] = {"Fri, 08 March 2024", "Mon, 25 March 2024", "Fri, 29 March 2024", "Tue, 09 April 2024", "Wed, 10 April 2024", "Wed, 17 April 2024", "Mon, 17 June 2024",
+    String[] dates = {"Fri, 08 March 2024", "Mon, 25 March 2024", "Fri, 29 March 2024", "Tue, 09 April 2024", "Wed, 10 April 2024", "Wed, 17 April 2024", "Mon, 17 June 2024",
             "Thu, 15 August 2024", "Mon, 19 August 2024", "Mon, 26 August 2024"};
 
     @Override

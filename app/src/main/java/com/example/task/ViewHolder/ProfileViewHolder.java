@@ -10,14 +10,14 @@ import com.example.task.R;
 
 public class ProfileViewHolder extends RecyclerView.ViewHolder {
 
-    private TextView name;
-    private TextView date;
+    private final TextView name;
+    private final TextView date;
 
     public ProfileViewHolder(@NonNull View itemView) {
         super(itemView);
 
-        name =(TextView) itemView.findViewById(R.id.nameText);
-        date = (TextView) itemView.findViewById(R.id.daysOffText);
+        name = itemView.findViewById(R.id.nameText);
+        date = itemView.findViewById(R.id.daysOffText);
     }
 
 
