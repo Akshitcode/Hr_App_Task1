@@ -70,7 +70,7 @@ public class MeFragment extends Fragment {
 
         }).attach();
 
-        viewPager.setUserInputEnabled(false);
+//        viewPager.setUserInputEnabled(false);
 
         return view;
     }
