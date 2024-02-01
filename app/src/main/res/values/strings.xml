@@ -33,4 +33,19 @@
     <string name="no_inbox_item">No Inbox Item</string>
     <string name="archive">Archive</string>
     <string name="view_all_requests_history_from_here">View all Requests History from here</string>
+    <string name="attendance">Attendance</string>
+    <string name="view_history_for_nattendance_requests_n">View history for\nattendance requests\n</string>
+    <string name="request_history">Request History</string>
+    <string name="ticket_history">Ticket history</string>
+    <string name="tickets_you_re_following_stay_updated_here">Tickets you\'re following, Stay updated here</string>
+    <string name="following">Following</string>
+    <string name="track_your_ticket_s_status_here_n">Track your ticket\'s status here</string>
+    <string name="logs_and_shifts">Logs and shifts</string>
+    <string name="view_history_for_attendance_requests">View history for attendance requests</string>
+    <string name="apply_leave">Apply Leave</string>
+    <string name="view_all_attendance_logs_here">View all attendance logs here</string>
+    <string name="view_your_leave_balances_history_and_transactions">View your leave balances, history and transactions</string>
+    <string name="leave_balances">Leave Balances</string>
+    <string name="apply_for_your_next_leave_here">Apply for your next leave here</string>
+    <string name="leave">Leave</string>
 </resources>
