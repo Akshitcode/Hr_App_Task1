@@ -70,6 +70,7 @@ public class MeFragment extends Fragment {
 
         }).attach();
 
+        //To disable swipping between tabs
 //        viewPager.setUserInputEnabled(false);
 
         return view;
