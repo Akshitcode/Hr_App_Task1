@@ -48,4 +48,20 @@
     <string name="leave_balances">Leave Balances</string>
     <string name="apply_for_your_next_leave_here">Apply for your next leave here</string>
     <string name="leave">Leave</string>
+    <string name="personal_feedback">Personal Feedback</string>
+    <string name="give_feedback_and_foster_a_culture_of_continuous_learning">Give feedback and foster a culture of continuous learning</string>
+    <string name="take_a_moment_to_appreciate_your_peer_s_achievements">Take a moment to appreciate your peer\'s achievements</string>
+    <string name="praise">Praise</string>
+    <string name="performance">Performance</string>
+    <string name="ticket_history_image">Ticket History image</string>
+    <string name="following_image">Following image</string>
+    <string name="salary">Salary</string>
+    <string name="looks_like_payroll_is_disabled">Looks like payroll is disabled</string>
+    <string name="add_claim_expenses">Add/Claim Expenses</string>
+    <string name="create_expenses_advance_requests_mileage_tracking_per_diem_and_claim_them">Create expenses, advance requests, mileage tracking, per diem and claim them</string>
+    <string name="expenses_and_payments_awaiting_approval">Expenses and payments awaiting approval</string>
+    <string name="past_claims">Past Claims</string>
+    <string name="all_claims_which_have_been_settled_or_rejected">All claims which have been settled or rejected</string>
+    <string name="pending">Pending</string>
+    <string name="expenses">Expenses</string>
 </resources>

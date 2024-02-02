@@ -22,7 +22,7 @@
             android:id="@+id/optionsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/attendance"
+            android:text="@string/performance"
             android:textColor="@color/black"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +48,8 @@
                     android:layout_height="48dp"
                     android:background="@drawable/circular_background"
                     android:padding="8dp"
-                    android:src="@drawable/history" />
+                    android:src="@drawable/history"
+                    android:contentDescription="@string/ticket_history_image" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -80,7 +81,8 @@
                     android:layout_height="48dp"
                     android:background="@drawable/circular_background"
                     android:padding="8dp"
-                    android:src="@drawable/flag" />
+                    android:src="@drawable/flag"
+                    android:contentDescription="@string/following_image" />
 
                 <TextView
                     android:layout_width="wrap_content"

@@ -93,7 +93,7 @@ android:fillViewport="true"
                     android:layout_height="48dp"
                     android:background="@drawable/circular_background"
                     android:padding="8dp"
-                    android:src="@drawable/flag" />
+                    android:src="@drawable/list" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -154,7 +154,7 @@ android:fillViewport="true"
                     android:layout_height="48dp"
                     android:background="@drawable/circular_background"
                     android:padding="8dp"
-                    android:src="@drawable/history" />
+                    android:src="@drawable/ic_baseline_flight_takeoff_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -189,7 +189,7 @@ android:fillViewport="true"
                     android:layout_height="48dp"
                     android:background="@drawable/circular_background"
                     android:padding="8dp"
-                    android:src="@drawable/flag" />
+                    android:src="@drawable/history" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -222,7 +222,7 @@ android:fillViewport="true"
                     android:layout_height="48dp"
                     android:background="@drawable/circular_background"
                     android:padding="8dp"
-                    android:src="@drawable/flag" />
+                    android:src="@drawable/monitor" />
 
                 <TextView
                     android:layout_width="wrap_content"

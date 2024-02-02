@@ -6,11 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.MeFragment">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp">
-
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
@@ -18,6 +13,8 @@
             app:tabGravity="fill"
             app:tabMode="fixed"
             app:tabTextColor="@color/black"
+            android:layout_marginTop="15dp"
+            app:tabSelectedTextColor ="@color/_713bd1"
             app:tabTextAppearance="@style/CustomTabText"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -25,8 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/viewPager"
-            android:layout_below="@id/tabLayout"
+            android:layout_marginTop="?attr/actionBarSize"
             tools:ignore="SpeakableTextPresentCheck" />
-    </RelativeLayout>
+
 
 </FrameLayout>
